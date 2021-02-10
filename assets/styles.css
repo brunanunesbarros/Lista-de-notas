@@ -1,0 +1,97 @@
+body{
+    background-color:#FCF6BD;
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
+
+.entradas{
+    outline: none;
+    height: 50px;
+    width: 83.3%;
+    border: 2px solid #575761;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.entradas:focus {
+    outline: none;
+    border-color: #575761;
+    box-shadow: 0 0 1px 1px #575761;
+}
+
+
+.adicionar{
+    height: 50px;
+    width: 16.7%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px ;
+    border: 2px solid #575761;
+    border-left: none;
+    color: white;
+    background-color: #575761;
+}
+
+.adicionar:hover{
+    cursor: pointer;
+}
+
+.conteudo-notas{
+    overflow: auto;
+    width: 500px;
+    max-height: 400px;
+    margin-top: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.lista-notas{
+    list-style: none;
+    padding: 0;
+    background-color: white;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid #000000;
+    padding: 10px 20px;
+}
+.item button{
+    background-color: #FE5F00 !important;
+}
+
+label{
+    width: 80%;
+    margin: 0;
+    text-align: start;
+}
+
+.done{
+    text-decoration: line-through;
+}
